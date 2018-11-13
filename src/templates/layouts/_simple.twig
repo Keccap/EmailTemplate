@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="telephone=no">
+
+    <style type="text/css">
+        /* reset */
+        /* #97aebf */
+        #outlook a {
+            padding: 0;
+        }
+
+        /* Force Outlook to provide a "view in browser" menu link. */
+        .ExternalClass {
+            width: 100%;
+        }
+
+        /* Force Hotmail to display emails at full width */
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+            line-height: 100%;
+        }
+
+        /* Forces Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */
+        p {
+            margin: 0;
+            padding: 0;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        /* squash Exact Target injected paragraphs */
+        table td {
+            border-collapse: collapse;
+        }
+
+        /* Outlook 07, 10 padding issue fix */
+        table {
+            border-collapse: collapse;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        /* remove spacing around Outlook 07, 10 tables */
+
+        /* bring inline */
+        img {
+            outline: none;
+            text-decoration: none;
+            -ms-interpolation-mode: bicubic;
+        }
+
+        a img {
+            border: none;
+            text-decoration: none;
+        }
+
+        /*  */
+        html, body {
+            min-height: 100%;
+            max-height: auto;
+            height: 100%;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-size-adjust: none;
+        }
+
+        div, p, a, li, td {
+            -webkit-text-size-adjust: none;
+        }
+
+        .autolink a, .autolink {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .linkfix span a, .linkfix a a {
+            text-decoration: inherit !important;
+            color: inherit !important;
+        }
+
+        @media screen and (max-width: {{ letterWidth - 1 }}px) {
+            .col-wide {
+                display: table !important;
+                width: 100% !important;
+            }
+        }
+    </style>
+
+    {% import "macro/comments.twig" as mx %}
+</head>
+<body offset="0" style="height:100%; margin:0; padding:0;{% if bodyC %} background-color: {{ bodyC }};{% endif %}">
+<div class="autolink" style="display:block; font-size:0; line-height:0; max-height:0; mso-hide:all;">
+    <span>{{ preheader }}</span>
+</div>
+{% block content %}{% endblock %}
+</body>
+
+</html>

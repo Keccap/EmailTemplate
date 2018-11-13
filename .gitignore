@@ -1,0 +1,10 @@
+/.idea
+/**/node_modules
+/**/*.css.map
+/**/*.js.map
+/**/._.*
+/**/._*
+/**/.DS_Store
+/**/src/html/
+/**/src/css/
+/**/src/js/

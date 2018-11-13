@@ -1,0 +1,86 @@
+{# Ряд колонок с шириной 110px, 90px и 105px #}
+
+<td style="vertical-align: top; text-align: center; font-size: 0;">
+
+    <!--[if (gte mso 9)|(IE)]>
+    <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td valign="top" width="110">
+    <![endif]-->
+
+
+    <table border="0" cellpadding="0" cellspacing="0" width="110" style="display: inline-block; vertical-align: top;">
+        <tr>
+            <td valign="top" width="110">
+                {# контент колонки #}
+            </td>
+        </tr>
+    </table><!--[if (gte mso 9)|(IE)]>
+    </td>
+    <td valign="top" width="90">
+    <![endif]--><table border="0" cellpadding="0" cellspacing="0" width="90" style="display: inline-block; vertical-align: top;">
+        <tr>
+            <td valign="top" width="90">
+                {# контент колонки #}
+            </td>
+        </tr>
+    </table><!--[if (gte mso 9)|(IE)]>
+    </td>
+    <td valign="top" width="105">
+    <![endif]--><table border="0" cellpadding="0" cellspacing="0" width="105" style="display: inline-block; vertical-align: top;">
+        <tr>
+            <td valign="top" width="105">
+                {# контент колонки #}
+            </td>
+        </tr>
+    </table>
+
+
+    <!--[if (gte mso 9)|(IE)]>
+            </td>
+        </tr>
+    </table>
+    <![endif]-->
+
+</td>
+
+
+
+
+{# Macro #}
+
+<tr>
+    <td valign="top">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td style="vertical-align: top; text-align: center; font-size: 0;">
+
+                    {{ mx.msStart('100%', '110', 'top') }}
+
+                    <table border="0" cellpadding="0" cellspacing="0" width="110" style="display: inline-block; vertical-align: top;">
+                        <tr>
+                            <td valign="top" width="110">
+                                {# контент колонки #}
+                            </td>
+                        </tr>
+                    </table>{{    mx.msStep(90, 'top')    }}<table border="0" cellpadding="0" cellspacing="0" width="90" style="display: inline-block; vertical-align: top;">
+                        <tr>
+                            <td valign="top" width="90">
+                                {# контент колонки #}
+                            </td>
+                        </tr>
+                    </table>{{    mx.msStep(105, 'top')    }}<table border="0" cellpadding="0" cellspacing="0" width="105" style="display: inline-block; vertical-align: top;">
+                        <tr>
+                            <td valign="top" width="105">
+                                {# контент колонки #}
+                            </td>
+                        </tr>
+                    </table>
+
+                    {{ mx.msEnd() }}
+
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>

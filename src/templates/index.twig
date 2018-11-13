@@ -1,0 +1,43 @@
+---
+preheader: ''
+
+letterWidth: 600
+letterMinWidth: 600
+
+bodyC: null
+textC: '#000000'
+textAltC: '#000000'
+accentC: '#2b3380'
+bgC: '#2b3380'
+bgInnerC: '#1ab2ec'
+btnC: '#2b3380'
+---
+
+
+{% extends "layouts/_simple.twig" %}
+{% block content %}
+
+    {# WRAPPER TABLE #}
+    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin:0; padding:0; width: 100%;">
+        <tr>
+            <td style="vertical-align:top;">
+
+                {# CONTAINER TABLE #}
+                {{ mx.msStart(letterWidth, 'auto', 'top') }}
+
+                <table align="center" cellpadding="0" cellspacing="0" border="0" style="min-width: {{ letterMinWidth }}px; width: 100%; max-width: {{ letterWidth }}px; margin: 0 auto; background-color: {{ bgInnerC }};">
+                    {% include 'parts/header.twig' %}
+                    {% include 'parts/hero.twig' %}
+                    {% include 'parts/second.twig' %}
+                    {% include 'parts/footer.twig' %}
+                </table>
+
+                {{ mx.msEnd() }}
+                {# /CONTAINER TABLE #}
+
+            </td>
+        </tr>
+    </table>
+    {# /WRAPPER TABLE #}
+
+{% endblock %}
