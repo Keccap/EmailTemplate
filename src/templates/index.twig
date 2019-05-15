@@ -5,12 +5,14 @@ letterWidth: 600
 letterMinWidth: 600
 
 bodyC: null
+bgContainerC: null
+
+bgC: '#f1f2f6'
 textC: '#000000'
-textAltC: '#000000'
-accentC: '#2b3380'
-bgC: '#2b3380'
-bgInnerC: '#1ab2ec'
-btnC: '#2b3380'
+textAltC: '#2f3542'
+accentC: '#ffa502'
+linkC: '#1e90ff'
+btnC: '#eccc68'
 ---
 
 
@@ -25,7 +27,7 @@ btnC: '#2b3380'
                 {# CONTAINER TABLE #}
                 {{ mx.msStart(letterWidth, 'auto', 'top') }}
 
-                <table align="center" cellpadding="0" cellspacing="0" border="0" style="min-width: {{ letterMinWidth }}px; width: 100%; max-width: {{ letterWidth }}px; margin: 0 auto; background-color: {{ bgInnerC }};">
+                <table align="center" cellpadding="0" cellspacing="0" border="0" style="min-width: {{ letterMinWidth }}px; width: 100%; max-width: {{ letterWidth }}px; margin: 0 auto;{% if bgContainerC %} background-color: {{ bgContainerC }};{% endif %}">
                     {% include 'parts/header.twig' %}
                     {% include 'parts/hero.twig' %}
                     {% include 'parts/second.twig' %}
