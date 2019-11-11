@@ -1,0 +1,21 @@
+{% from "components/example.twig" import exampleComponent %}
+
+<tr>
+    <td style="vertical-align: top;">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;">
+            <tr>
+                {# COMPONENT / LOOP #}
+                {% for item in example %}
+                    <td style="vertical-align: top;">
+                        {{
+                            exampleComponent({
+                                title: item.title,
+                                text: item.text
+                            })
+                        }}
+                    </td>
+                {% endfor %}
+            </tr>
+        </table>
+    </td>
+</tr>

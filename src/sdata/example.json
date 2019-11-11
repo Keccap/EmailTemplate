@@ -1,0 +1,12 @@
+{
+    "example": [
+        {
+            "title": "Title 1",
+            "text": "text"
+        },
+        {
+            "title": "Title 2",
+            "text": "text"
+        }
+    ]
+}

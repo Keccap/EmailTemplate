@@ -8,6 +8,9 @@ const config = {
 	src: {
 		root: srcDir,
 		templates: srcDir + '/templates',
+        sdata: srcDir + '/sdata',
+        data: srcDir + '/data',
+        dataFile: 'data.json',
 		img: srcDir + '/img'
 	},
 	dest: {
@@ -29,7 +32,7 @@ function errorHandler(title){
 			title: title || 'Compile Error',
 			message: '<%= error.message %>'
 		}).apply(this, arguments);
-		
+
 		this.emit('end');
 	};
 };

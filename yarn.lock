@@ -726,6 +726,10 @@ depd@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
 
+deprecate@^1.0.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/deprecate/-/deprecate-1.1.1.tgz#4632e981fc815eeaf00be945a40359c0f8bf9913"
+
 destroy@~1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.0.4.tgz#978857442c44749e4206613e37946205826abd80"
@@ -1267,6 +1271,17 @@ gulp-front-matter@^1.3.0:
     tryit "^1.0.1"
     vinyl-bufferstream "^1.0.1"
 
+gulp-merge-json@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/gulp-merge-json/-/gulp-merge-json-1.3.1.tgz#38a8f69c18598085a4b33a08f4074406451e9f2a"
+  dependencies:
+    deprecate "^1.0.0"
+    json5 "^1.0.1"
+    lodash.mergewith "^4.6.1"
+    plugin-error "^1.0.1"
+    through "^2.3.8"
+    vinyl "^2.1.0"
+
 gulp-notify@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/gulp-notify/-/gulp-notify-3.2.0.tgz#2ae8225009df881eef59be5dd5a2f1337387764e"
@@ -1722,6 +1737,12 @@ json-stable-stringify@^1.0.0:
   dependencies:
     jsonify "~0.0.0"
 
+json5@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/json5/-/json5-1.0.1.tgz#779fb0018604fa854eacbf6252180d83543e3dbe"
+  dependencies:
+    minimist "^1.2.0"
+
 jsonfile@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/jsonfile/-/jsonfile-3.0.1.tgz#a5ecc6f65f53f662c4415c7675a0331d0992ec66"
@@ -1882,6 +1903,10 @@ lodash.keys@^3.0.0:
     lodash._getnative "^3.0.0"
     lodash.isarguments "^3.0.0"
     lodash.isarray "^3.0.0"
+
+lodash.mergewith@^4.6.1:
+  version "4.6.2"
+  resolved "https://registry.yarnpkg.com/lodash.mergewith/-/lodash.mergewith-4.6.2.tgz#617121f89ac55f59047c7aec1ccd6654c6590f55"
 
 lodash.restparam@^3.0.0:
   version "3.6.1"
@@ -2443,6 +2468,15 @@ plugin-error@^0.1.2:
     arr-diff "^1.0.1"
     arr-union "^2.0.1"
     extend-shallow "^1.1.2"
+
+plugin-error@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/plugin-error/-/plugin-error-1.0.1.tgz#77016bd8919d0ac377fdcdd0322328953ca5781c"
+  dependencies:
+    ansi-colors "^1.0.1"
+    arr-diff "^4.0.0"
+    arr-union "^3.1.0"
+    extend-shallow "^3.0.2"
 
 portscanner@2.1.1:
   version "2.1.1"
@@ -3071,6 +3105,10 @@ through2@~0.4.0:
     readable-stream "~1.0.17"
     xtend "~2.1.1"
 
+through@^2.3.8:
+  version "2.3.8"
+  resolved "https://registry.yarnpkg.com/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
+
 time-stamp@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/time-stamp/-/time-stamp-1.1.0.tgz#764a5a11af50561921b133f3b44e618687e0f5c3"
@@ -3277,6 +3315,17 @@ vinyl@^0.5.0:
 vinyl@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/vinyl/-/vinyl-2.1.0.tgz#021f9c2cf951d6b939943c89eb5ee5add4fd924c"
+  dependencies:
+    clone "^2.1.1"
+    clone-buffer "^1.0.0"
+    clone-stats "^1.0.0"
+    cloneable-readable "^1.0.0"
+    remove-trailing-separator "^1.0.1"
+    replace-ext "^1.0.0"
+
+vinyl@^2.1.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/vinyl/-/vinyl-2.2.0.tgz#d85b07da96e458d25b2ffe19fece9f2caa13ed86"
   dependencies:
     clone "^2.1.1"
     clone-buffer "^1.0.0"
